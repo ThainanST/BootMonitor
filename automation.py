@@ -3,7 +3,8 @@ import datetime
 
 def update_file():
     with open("src/boot_log.txt", "a") as f:
-        f.write(f"Update on {datetime.datetime.now()}\n")
+        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        f.write(f"{now}\n")
 
 def commit_and_push():
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
