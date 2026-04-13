@@ -15,3 +15,4 @@ def commit_and_push():
 if __name__ == "__main__":
     update_file()
     commit_and_push()
+    input("\nProcesso concluído. Pressione Enter para fechar...")
